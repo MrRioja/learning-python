@@ -1,10 +1,19 @@
-users = {
-    "Mark": ["Mark Hitman", "10/10/2020", "TI_05"],
-    "Robert": ["Robert Lewandowisk", "15/11/2020", "PD_02"],
-}
+from Capitulo3_Funcoes.IdentificacaoDeFuncoes import *
 
-print(users)
+minhaLista = []
+print("Preenchendo")
+preencherInventario(minhaLista)
+print("Exibindo")
+exibirInventario(minhaLista)
 
-users["Jolie"] = ["Jolie Rickmann", "25/11/2020", "MKT_01"]
+print("Pesquisando")
+localizarPorNome(minhaLista)
+print("Alterando")
+depreciarPorNome(minhaLista, 20)
 
-print(users.get("Robert"))
+print("Excluindo")
+print(excluirPorSerial(minhaLista))
+exibirInventario(minhaLista)
+
+print("Resumindo")
+resumirValores(minhaLista)
